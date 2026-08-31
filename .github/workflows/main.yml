@@ -1,22 +1,13 @@
-name: Hello World Pipeline
-
-# 1. Trigger: Run this pipeline every time code is pushed to the main branch
+name: Hello  world pipeline
 on:
   push:
     branches:
       - main
-
-# 2. Execution Steps
 jobs:
   run-pipeline-check:
-    # Tell GitHub to run these commands on a fresh Ubuntu Linux server
     runs-on: ubuntu-latest
-
     steps:
-      # Step A: Download your repository's code onto the runner machine
-      - name: Checkout Code Repository
+      - name: checkout code Repository background
         uses: actions/checkout@v4
-
-      # Step B: Run a custom command to print a message to the console
-      - name: Test Console Output
-        run: echo "Pipeline is running successfully!"
+      - name: Test console output 
+        run: echo "Pipeline is running sucessfully!!"
