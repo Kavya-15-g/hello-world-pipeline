@@ -15,4 +15,7 @@ jobs:
         run: |
           echo "Starting Docker build process...."
           docker build -t my-first-app:latest .
-         
+      - name: Execute and test Container
+        run: |
+          echo "Running our newly built container"
+          docker run --rm my-first-app:latest
