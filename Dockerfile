@@ -1,3 +1,3 @@
 FROM alpine:latest
-RUN echo "Building inside a container!!"
+RUN broekncommandxyz
 CMD ["echo", "container built and executed successfully"] 
